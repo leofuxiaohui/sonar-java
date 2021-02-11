@@ -100,13 +100,12 @@
     <version.codehaus.license.plugin>2.0.0</version.codehaus.license.plugin>
     <!-- FIXME: warnings on javadoc should be fixed -->
     <doclint>none</doclint>
-  </properties>
-
-  <properties>
+    
     <sonar.projectKey>leofuxiaohui_sonar-java</sonar.projectKey>
     <sonar.organization>leofuxiaohui</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
+
   
   <dependencyManagement>
     <dependencies>
