@@ -101,7 +101,7 @@
     <!-- FIXME: warnings on javadoc should be fixed -->
     <doclint>none</doclint>
     
-    <sonar.projectKey>leofuxiaohui_sonar-java</sonar.projectKey>
+    # <sonar.projectKey>leofuxiaohui_sonar-java</sonar.projectKey>
     <sonar.organization>leofuxiaohui</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
