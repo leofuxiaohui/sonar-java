@@ -18,8 +18,17 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: '11'
+      
+    - if: matrix.os == 'ubuntu-latest' && matrix.java == '12' # To ensure a single execution per CI run
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        JAVA_HOME: '' # Avoid 'java: not found' error:  
+
     - name: Analyze with SonarCloud
       run: ./mvnw -B verify sonar:sonar -Dsonar.projectKey=leofuxiaohui_sonar-java -Dsonar.organization=leofuxiaohui -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        
