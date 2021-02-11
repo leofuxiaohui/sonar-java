@@ -68,8 +68,8 @@ class Servlet implements javax.servlet.Servlet {
     ((HttpServletResponseWrapper) servletResponse).setHeader("x-powered-by", ""); // Noncompliant
     ((HttpServletResponseWrapper) servletResponse).addHeader("server", ""); // Noncompliant
 
-    ((org.apache.wicket.request.http.WebResponse) servletResponse).addHeader("x-powered-by",""); // Noncompliant
-    ((org.apache.wicket.request.http.WebResponse) servletResponse).setHeader("Server",""); // Noncompliant
+  //  ((org.apache.wicket.request.http.WebResponse) servletResponse).addHeader("x-powered-by",""); // Noncompliant
+  //  ((org.apache.wicket.request.http.WebResponse) servletResponse).setHeader("Server",""); // Noncompliant
 
     ((BufferedWebResponse) servletResponse).addHeader("x-powered-by",""); // Noncompliant
     ((BufferedWebResponse) servletResponse).setHeader("Server",""); // Noncompliant
