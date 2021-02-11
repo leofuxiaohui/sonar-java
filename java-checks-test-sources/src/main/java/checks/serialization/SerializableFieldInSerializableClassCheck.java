@@ -1,7 +1,7 @@
 package checks.serialization;
 
 import com.google.common.collect.*;
-import org.apache.wicket.markup.html.panel.GenericPanel;
+// import org.apache.wicket.markup.html.panel.GenericPanel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.springframework.stereotype.Component;
 import java.io.Serializable;
