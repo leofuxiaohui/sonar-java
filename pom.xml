@@ -59,7 +59,7 @@
     
     <module>java-surefire</module>
     <module>java-jsp</module>
-    <module>its</module>
+
   </modules>
 
   <scm>
